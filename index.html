@@ -1,36 +1,19 @@
 <html>
-<ul>
-  <li><a href="default.html">Home</a></li>
-  <li><a href="news.asp">News</a></li>
-  <li><a href="contact.asp">Contact</a></li>
-  <li><a href="about.asp">About</a></li>
-</ul>
-    ul {
-    list-style-type: none;
+<head>
+<style>
+body {
     margin: 0;
-    padding: 0;
-}
-    li a {
-    display: block;
-    width: 60px;
-}
-    ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 60px;
 }
 
-li a {
-    display: block;
-}
-    
-    ul {
+ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    width: 200px;
+    width: 25%;
     background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
 }
 
 li a {
@@ -40,37 +23,44 @@ li a {
     text-decoration: none;
 }
 
-/* Change the link color on hover */
-li a:hover {
-    background-color: #555;
-    color: white;
-}
-    .active {
+li a.active {
     background-color: #4CAF50;
     color: white;
 }
-    ul {
-    border: 1px solid #555;
-}
 
-li {
-    text-align: center;
-    border-bottom: 1px solid #555;
+li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
 }
+</style>
+</head>
+<body>
 
-li:last-child {
-    border-bottom: none;
-}
-    ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 25%;
-    background-color: #f1f1f1;
-    height: 100%; /* Full height */
-    position: fixed; /* Make it stick, even on scroll */
-    overflow: auto; /* Enable scrolling if the sidenav has too much content */
-}
+<ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+
+<div style="margin-left:25%;padding:1px 16px;height:1000px;">
+  <h2>Fixed Full-height Side Nav</h2>
+  <h3>Try to scroll this area, and see how the sidenav sticks to the page</h3>
+  <p>Notice that this div element has a left margin of 25%. This is because the side navigation is set to 25% width. If you remove the margin, the sidenav will overlay/sit on top of this div.</p>
+  <p>Also notice that we have set overflow:auto to sidenav. This will add a scrollbar when the sidenav is too long (for example if it has over 50 links inside of it).</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+  <p>Some text..</p>
+</div>
+
+</body>
+</html>
+
+<html>
   <head> 
     <title>Generador Electrico Casero</title>
   </head>
