@@ -39,7 +39,14 @@ li a:hover:not(.active) {
 <body>
 
 <ul>
-  <li><a class="active" href="#home">Home</a></li>
+<style>
+.btn{margin:10px 0 10px 0;color:#ffffff;font-weight:bold;display:inline-block;padding:6px 12px;font-size:16px;text-align:center;cursor:pointer;background-image:none;border:1px solid transparent;border-radius:4px;outline: 0;}
+.rss{background-color:#ff6600;}
+.rss:hover{background-color:#ff0000;}
+</style>
+
+<button type="button" onclick="javascript:void(window.open('https://www.youtube.com/watch?v=rV47Of-MhfQ&t=1s'));" class="btn rss">YouTube</button>
+
   <li><a href="#news">News</a></li>
   <li><a href="#contact">Contact</a></li>
   <li style="float:right"><a href="#about">About</a></li>
