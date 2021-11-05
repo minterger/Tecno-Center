@@ -1,186 +1,50 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
-	<meta charset="utf-8">
-	<title>Cabecera fija</title>
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: #f3f3f3;
+}
 
-        <link rel="stylesheet" href="style.css">
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #666;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+li a.active {
+    color: white;
+    background-color: #4CAF50;
+}
+</style>
 </head>
-
 <body>
-	
-	<header id="main-header">
-		
-		<a id="logo-header" href="#">
-			<span class="site-name">FranciscoAMK</span>
-			<span class="site-desc">Diseño web / WordPress / Tutoriales</span>
-		</a> <!-- / #logo-header -->
 
-		<nav>
-			<ul>
-				<li><a href="#">Inicio</a></li>
-				<li><a href="#">Acerca de</a></li>
-				<li><a href="#">Contacto</a></li>
-			</ul>
-		</nav><!-- / nav -->
+<ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
 
-	</header><!-- / #main-header -->
-
-	
-	<section id="main-content">
-	
-		<article>
-			<header>
-				<h1>Esta es una página con cabecera fija</h1>
-			</header>
-			
-			<img src="http://placekitten.com/800/250" alt="Gatito" />
-			
-			<div class="content">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-			</div>
-			
-		</article> <!-- /article -->
-	
-	</section> <!-- / #main-content -->
-
-	
-	
-	<footer id="main-footer">
-		<p>&copy; 2014 <a href="http://FranciscoAMK.com">FranciscoAMK.com</a></p>
-	</footer> <!-- / #main-footer -->
-
-	
 </body>
 </html>
-
-<!--codigo para cabecera fija-->
-
-
-body {
-	margin: 0;
-	padding: 0;
-	font-family: Helvetica, Arial, sans-serif;
-	color: #666;
-	background: #f2f2f2; 
-	font-size: 1em;
-	line-height: 1.5em;
-}
-
-h1 {
-	font-size: 2.3em;
-	line-height: 1.3em;
-	margin: 15px 0;
-	text-align: center;
-	font-weight: 300;
-}
-
-p {
-	margin: 0 0 1.5em 0;
-}
-
-img {
-	max-width: 100%;
-	height: auto;
-}
-
-
-#main-header {
-	background: #333;
-	color: white;
-	height: 80px;
-}	
-	#main-header a {
-		color: white;
-	}
-
-/*
- * Logo
- */
-#logo-header {
-	float: left;
-	padding: 15px 0 0 20px;
-	text-decoration: none;
-}
-	#logo-header:hover {
-		color: #0b76a6;
-	}
-	
-	#logo-header .site-name {
-		display: block;
-		font-weight: 700;
-		font-size: 1.2em;
-	}
-	
-	#logo-header .site-desc {
-		display: block;
-		font-weight: 300;
-		font-size: 0.8em;
-		color: #999;
-	}
-	
-
-/*
- * Navegación
- */
-nav {
-	float: right;
-}
-	nav ul {
-		margin: 0;
-		padding: 0;
-		list-style: none;
-		padding-right: 20px;
-	}
-	
-		nav ul li {
-			display: inline-block;
-			line-height: 80px;
-		}
-			
-			nav ul li a {
-				display: block;
-				padding: 0 10px;
-				text-decoration: none;
-			}
-			
-				nav ul li a:hover {
-					background: #0b76a6;
-				}
-
-#main-content {
-	background: white;
-	width: 90%;
-	max-width: 800px;
-	margin: 20px auto;
-	box-shadow: 0 0 10px rgba(0,0,0,.1);
-}
-
-	#main-content header,
-	#main-content .content {
-		padding: 40px;
-	}
-
-
-#main-footer {
-	background: #333;
-	color: white;
-	text-align: center;
-	padding: 20px;
-	margin-top: 40px;
-}
-	#main-footer p {
-		margin: 0;
-	}
-	
-	#main-footer a {
-		color: white;
-	}
+<!--codigo de la cabecera-->
 <!--codigo stilo de cabecera fija-->
   <head> 
     <title>Generador Electrico Casero</title>
